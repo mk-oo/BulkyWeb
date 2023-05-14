@@ -1,0 +1,338 @@
+
+body,*
+{
+    margin: 0px;
+    padding: 0px;   
+    font-family:Tahoma; 
+}
+
+header{
+    animation: animate 1s linear  forwards;
+    width: 100%;
+    height: 100px;
+  background-color: wheat;
+}
+
+
+.logo1{
+    
+    float: left;
+    margin-left: 70px;
+    display:inline;
+}
+
+.logo1 img{
+height: 80px;
+margin-top: 10px;
+}
+
+.links{
+    float: left;
+    margin-left: 350px;
+    display: inline;
+    margin-top: 45px;
+    font-size: 15px;
+
+}
+
+@media screen and ( max-width : 375px ){
+  .links{
+    margin-top: 0px;
+    margin-left: 10px;
+
+  }
+
+}
+
+
+@media screen and ( max-width : 812px ){
+  .links{
+    margin-left: 50px;
+  }
+
+}
+
+
+.logo img{
+  height: 5%;
+  width: 25%;
+  margin-left: 800px;
+  margin-top: 50px;
+}
+@media screen and ( max-width : 812px ){
+  .logo img{
+    margin-left: 480px;
+
+  }
+
+}
+@media screen and ( max-width : 812px ){
+  .logo img{
+    margin-left: 480px;
+
+  }
+}
+
+@media screen and ( max-width : 375px ){
+  .logo img{
+    margin-left: 140px;
+    margin-top: 350px;
+
+  }
+
+}
+
+.login{
+    float: right;
+    margin-top: 45px;
+    margin-right: 200px;
+}
+.login a{
+    text-decoration: none; 
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+@media screen and ( max-width : 812px ){
+  
+  .login{
+    margin-top: 45px;
+    margin-right: 100px;
+  }
+
+}
+.links ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+
+  
+}
+.links li a{
+    text-decoration: none;
+    color: #002b5c;
+
+
+
+}
+@keyframes animate{
+0%{
+opacity: 0;
+transform: rotateY(90deg);
+filter: blur(10px);
+}
+100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+}
+}
+.links li a:hover{
+    border-bottom: 2px solid blue;
+    background-color:#002b5c;
+    color: white;
+    transition: 0.6s ease;
+   
+
+  
+}
+
+.login a:hover{
+    border-bottom: 2px solid blue;
+    background-color:#002b5c;
+    color: white;
+    transition: 0.6s ease;
+    
+  
+}
+footer{
+  widows: 100%;
+  height: 120px;
+  background-color: #002b5c;
+}
+footer ul{
+  margin-left: 500px;
+}
+@media screen and ( max-width : 812px ){
+    footer ul{
+    margin-left: 300px;
+  }
+
+}
+@media screen and ( max-width : 375px ){
+  footer ul{
+    margin-left: 85px;
+}
+ }
+footer ul li{
+  list-style-type: none;
+  margin-top: 30px;
+  background-color:#40aeef;
+  width: 15px;
+  height: 10px;
+  color: #FFF;
+ 
+}
+footer li{
+  list-style: none;
+  display: inline-block;
+  font-size: 15px;
+  padding:  8px;
+  color: #FFF;
+  border: 1px solid #FFF;
+ 
+ }
+ footer p{
+     color:#fff ;
+     margin-left: 535px;
+
+ }
+ @media screen and ( max-width : 812px ){
+  footer p{
+    color:#fff ;
+    margin-left: 330px;
+
+}
+ }
+ @media screen and ( max-width : 375px ){
+  footer p{
+    margin-left: 120px;
+
+}
+ }
+
+ footer li a{
+     color: #FFF;
+ }
+
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(bus.png) ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    margin-top: 0px;
+}
+@media screen and ( max-width : 768px ){
+  .header{
+    height: 40vh;
+  }
+
+}
+@media screen and ( max-width : 375px ){
+  .header{
+    height:62vh;
+  }
+
+}
+
+
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+  background-color: #000;
+  opacity: 0.8;
+
+
+}
+  .form-popup {
+    display: inline-block;
+    position: absolute;
+    
+   
+    margin-left: 90px;
+
+  }
+  .form-container h1{
+    padding-bottom: 20px;
+  }
+  .form-container b,.form-container h1{
+
+    color: white;
+    
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+  }
+
+
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] ,.form-container input[type=number] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0px 22px 0px;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 20px;
+
+  }
+
+ 
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #002b5c;;
+    color: white;
+    padding: 16px ;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 20px;
+    transition:  0.6s ease;
+  }
+  @media screen and ( max-width : 812px ){
+    .form-container .btn {
+      padding: 10px ;
+    }
+
+  }
+
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+    transition:  0.6s ease;
+
+    
+
+  }
+  .form-container .cancel a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover{
+    opacity: 1;
+  }
+  @media screen and ( max-width : 812px ){
+    .form-popup {
+      margin-left: 10px;
+
+    }
+  }
+  @media screen and ( max-width :375px ){
+    .form-popup {
+      margin-left: 30px;
+
+    }
+  }
+  
+  @media screen and ( max-width : 812px ){
+    .form-container input[type=text], .form-container input[type=password] ,.form-container input[type=number] {
+      padding: 3px;
+      margin: 5px;
+    }
+   
+  }
+  @media screen and ( max-width : 768px ){
+    .form-container input[type=text], .form-container input[type=password] ,.form-container input[type=number] {
+      padding: 3px;
+      margin: 5px;
+    }
+   
+  }
